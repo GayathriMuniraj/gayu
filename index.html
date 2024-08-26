@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="form.js"></script>
+    <style>
+        body{
+           
+            width: 100vh;
+            height: 100vh;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+           
+        }
+        .head{
+            text-align: center;
+        }
+        form{
+            background-color: azure;
+            padding: 20px;
+            width: 300px;
+        }
+        .form-group{
+            margin-bottom: 10px;
+        }
+        .form-group>label{
+            display: block;
+            padding: 5px;
+        }
+        input[type="text"],
+        input[type="email"]{
+            width:100%;
+            outline:none;
+            height: 30px;
+        }
+        .form.form-group:last-of-type{
+            margin-bottom: 10px;
+        }
+        .submit{
+            background-color: rgb(5, 88, 213);
+            color:aliceblue;
+            border:none;
+            border-radius: 5px;
+            height: 30px;
+            width: 70px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" autocomplete="off">
+        <h2 class="head">LOGIN</h2>
+        <div class="form-group">
+            <label for="username">UserName</label>
+            <input type="text" id="username" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="emails">Email</label>
+            <input type="email" id="emails" placeholder="Enter your name"> 
+        </div>
+        <div class="form-group">
+            <legend>Choose Gender</legend>
+            <label><input type="radio" name="gender" value="male">Male</label>
+            <label><input type="radio" name="gender" value="Female">Female</label>
+        </div>
+        <input type="checkbox" id="agree">
+        <label for="agree">i agree all conditions</label>
+        <div>
+            <button class="submit">Submit</button>
+            <button class="submit">Reset</button>
+        </div>
+    </form>
+
+
+
+    <script src="form.js"></script>
+</body>
+</html>
